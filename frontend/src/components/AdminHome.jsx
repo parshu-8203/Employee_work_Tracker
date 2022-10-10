@@ -9,7 +9,7 @@ const baseUrl = "http://localhost:3000";
 function AdminHome() {
     const [data, setData] = useState([]);
     useEffect(() => {
-        axios.get(baseUrl + "/admin").then(response => {
+        axios.get(baseUrl + "/admin/home").then(response => {
             setData(response.data.result);
         })
             .catch((err) => {
@@ -21,8 +21,7 @@ function AdminHome() {
     //         .catch((err) => { console.log(err) });
      }, [])
     return (
-        <>
-        <AdminNavbar/>
+        
         <div className='bg-white ml-3 mr-3 mt-5 mb-2 box'>
             <center><p className="heading">List of Employees</p></center>
             {
@@ -34,7 +33,7 @@ function AdminHome() {
                 })
             }
         </div>
-        </>
+
     );
 }
 

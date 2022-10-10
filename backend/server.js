@@ -134,7 +134,7 @@ app.post("/", function (req, res) {
     res.send(payload)
 })
 
-app.get("/admin", function (req, res) {
+app.get("/admin/home", function (req, res) {
     emp.find(function (err, result) {
         if (!err) {
             res.send({ result });
@@ -145,17 +145,18 @@ app.get("/admin", function (req, res) {
     })
 });
 app.delete("/admin/:id", function (req, res) {
-    // console.log("Delete running");
-    // console.log(req.params.id);
+    console.log("Delete running");
+    console.log(req.params.id);
     const it = req.params.id;
     emp.deleteOne({ Email: it }).then(function () {
         console.log("Data deleted");
+        console.log("deleted");
         res.send(req.params);
     }).catch(function (error) {
         console.log(error);
     });
 })
-app.post("/addemp", function (req, res) {
+app.post("admin/addemp", function (req, res) {
     const dt = req.body;
     if (req.body !== undefined) {
         var Emp = new emp(dt);

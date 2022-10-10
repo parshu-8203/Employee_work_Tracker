@@ -22,6 +22,9 @@ body {
     margin-top: 15px;
     
 }
+.click-btn {
+    background-color: black;
+}
 
 .navbar-shadow {
     text-shadow: 10px 10px 6px rgba(0, 0, 0, 0.25);
@@ -75,6 +78,10 @@ img.profile-photo-lg {
 .form-group {
     margin-bottom: 0px;
 }
+.role button:hover{
+    border: 2px solid white;
+}
+
 .form-group.floating>label {
     bottom: 34px;
     left: 8px;
@@ -100,3 +107,309 @@ img.profile-photo-lg {
 }
 /* //END/// */
 
+/* Login Page */
+
+.screen{
+    height: 100vh;
+    width: 100%;
+    border-radius: 25px;
+    margin-top:15px;
+}
+.card1{
+    height: 90vh;
+    width: 90%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    background-color: #6B38AD;
+    box-shadow: 90px 150px 40px 40px #00000040;
+    display: flex;
+    position: relative;
+}
+.card11{
+    width: 500px;
+    height: 100%;
+    background-color: #6B38AD;
+    border-radius: 25px;
+    position: static;
+
+}
+.info-heading{
+    font-family: "Open Sans";
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 12px;
+    margin-bottom: 15px;
+    text-shadow: 20px 30px 30px rgba(0, 0, 0, 0.25);
+    line-height: 1;
+    text-shadow:5px 5px rgb(66, 62, 62);
+    background-color: #6B38AD;
+    position: static;
+font-size: 45px;
+
+}
+.info-paragraph{
+    
+    background-color: #6B38AD;
+    font-family: 'Open Sans';
+    font-style: normal;
+    color: #FFFFFF; 
+    font-weight: 300;
+font-size: 25px;
+line-height: 1;
+/*text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);*/
+text-shadow:4px 4px rgb(66, 62, 62);
+font-size: 20px;
+
+}
+.info{
+    background-color: #6B38AD;
+   padding: 20px;
+   margin: 20% 40% ;
+   margin-left: 15%;
+    line-height: 1;
+    position: static;
+    
+}
+.card12{
+    width: 50%;
+    height: 100%;
+    background-color: #6B38AD;
+    border-radius: 25px;
+}
+.form1{
+    margin: 20px;
+    position: relative;
+}
+.role{
+    display: flex;
+}
+.admin{
+    width: 50%;
+    height: 60px;
+    background-color: #6B38AD;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    color: white;
+    border-radius: 16px;
+    border:none;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: white;
+}/*
+.admin:hover{
+    transform: scale(1.0);
+    background-color: #3b1271;
+    cursor:pointer;
+    border-top: 3px solid red;
+}
+.ad{
+    background-color: #6B38AD;
+
+}
+.ad:focus{
+    background-color:#3b1271 ;
+}
+.ad:visited{
+    background-color:#3b1271 ;
+}
+.ad:active{
+    background-color:#3b1271 ;
+}*/
+.em{
+    background-color: #6B38AD;
+
+}
+.em:focus,.em:active{
+    background-color:#3b1271 ;
+}
+.admin:active{
+    transform: scale(1.0);
+    background-color: #3b1271;
+}
+.employee{
+    width: 50%;
+    height: 60px;
+    margin-top:0px ;
+    background-color: #6B38AD;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 16px;
+    border:none;
+    margin-top: 10%;
+    font-family: 'Open Sans';
+    font-style: normal;
+}/*
+.employee:hover{
+    transform: scale(1.0);
+    background-color: #3b1271;
+    cursor:pointer;
+    border-top: 3px solid red;
+}
+*/
+.login-information{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom:60px;
+}
+.lable-email{
+    margin: 10px; 
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+.input-email{
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    margin-top: 7px;
+    padding: 15px;
+}
+.lable-password{
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+  
+}
+.input-password{
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+.login-div{
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -15%;
+}
+.login{
+    background-color: #6B38AD;
+    height: 40px;
+    width:110px;
+    box-shadow: 10px 10px 10px rgba(15, 15, 15, 10);
+    border-collapse: collapse;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    
+}
+.login:hover{
+    transform: scale(1.0);
+    background-color: #3b1271;
+    cursor:pointer;
+}
+
+@media  (max-width: 1000px) and (min-width:300px) {
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: #6B38AD;
+        box-shadow: none;
+    }
+    .info-heading{
+        width: 80%;
+        font-size: 80px;
+    }
+    .info-paragraph{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .card11{
+        width: 100%;
+    height: 100%;
+    background-color: #6B38AD;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    }
+    .card12{
+        width: 80%;
+    height: 100%;
+    background-color: #6B38AD;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    margin: 20px 20px;
+    margin:auto;
+    width:80%;
+    margin-bottom: 200px;
+    }
+    .login-div{
+        margin-bottom: 40px;
+    }
+    .info{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+  /*  .admin{
+        border: 1px solid rgb(82, 36, 94);
+    }
+    .employee{
+        border: 1px solid rgb(82, 36, 94);
+    }*/
+
+    .form1{
+        margin: 10%;
+        margin-top:0;
+        background-color: #6B38AD;
+    }
+    .lable-email{
+        width: 100%;
+        font-size: 25px;
+    }
+    .lable-password{
+        width: 100%;
+        font-size: 25px;
+    }
+    .input-email{
+        width: 80%;
+    }
+    .input-password{
+        width: 80%;
+    }
+    .login-information{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-left: 0%;
+        margin-bottom:60px;
+        
+    }
+    .admin,.employee{
+        font-size: 25px;
+    }
+    .login{
+        font-size: 20px;
+    }
+    .card1{
+        background-color: #6B38AD;
+    }
+    .card0{
+        background-color: #6B38AD;
+        border-radius: 20px;
+        margin: 20px 20px;
+    box-shadow: 40px 30px 30px 30px #00000040;
+    }
+    
+  }

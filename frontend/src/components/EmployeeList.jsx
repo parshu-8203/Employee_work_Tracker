@@ -1,9 +1,14 @@
 
 import axios from 'axios';
 import {Navigate,useNavigate} from 'react-router-dom'
+import ShowEmp from './ShowEmp';
 
 function EmployeeList(props) {
     const navigate = useNavigate();
+    function showMe() {
+         navigate("/admin/"+props.email);
+        
+    }
     function deleteMe() {
         console.log("delete clicked", props.email);
         axios.delete('http://localhost:3000/admin/'+props.email)
@@ -11,7 +16,6 @@ function EmployeeList(props) {
             <Navigate to="/admin"></Navigate>
         })
         .catch((err) => console.log(err));
-        navigate('/admin' );
     }
     return (
         <div className="container">
@@ -28,7 +32,7 @@ function EmployeeList(props) {
                                 <p >{props.email}</p>
                             </div>
                             <div className="col-md-3 col-sm-3">
-                                <button className="btn btn-primary btn-info mr-2 mb-2">Edit</button>
+                                <button className="btn btn-primary btn-info mr-2 mb-2" name={props.email} onClick={showMe}>Track</button>
                                 <button className="btn btn-primary btn-danger mr-2 mb-2" name={props.email} onClick={deleteMe}>Delete</button>
                             </div>
                         </div>

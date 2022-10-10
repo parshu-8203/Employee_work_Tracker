@@ -13,7 +13,7 @@ function EmpNavbar() {
                     <div className="navbar-nav ml-auto">
                         <NavLink className="nav-link nav-item navbar-shadow" to="/emp/home"><strong>HOME</strong></NavLink>
                         <NavLink className="nav-link nav-item navbar-shadow" to="/emp/addemp"><strong>ADD EMPLOYEE</strong></NavLink>
-                        <NavLink className="nav-link nav-item navbar-shadow" ><strong>logout</strong></NavLink>
+                        <NavLink className="nav-link nav-item navbar-shadow"  to="/login"><strong>logout</strong></NavLink>
                     </div>
                 </div>
             </div>
