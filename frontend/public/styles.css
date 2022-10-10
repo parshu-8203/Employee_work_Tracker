@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #6B38AD;
+}
+
+.box {
+    box-shadow: 22px 10px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 10px;
+}
+
+.box .heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+
+.navbar-shadow {
+    text-shadow: 10px 10px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Admin - Employee List */
+.employee-list .list {
+    padding: 20px 0;
+    border-top: 1px solid #f1f2f2;
+    border-bottom: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+img.profile-photo-lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+
+/* ////END///// */
+
+
+
+/* Adming Form */
+.addForm {
+    position: relative;
+    margin-top: 10px;
+    width: 69%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.addForm button {
+    margin-right: 30px;
+}
+   
+.form-control:focus {
+    border-color: #6B38AD !important;
+    box-shadow: 0 0 0 0.2rem  #6B38AD;
+}
+
+
+/* Label Floating */
+.inp1{
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.form-group {
+    margin-bottom: 0px;
+}
+.form-group.floating>label {
+    bottom: 34px;
+    left: 8px;
+    position: relative;
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+    font-size: 1.1em;
+    transition: 0.1s;
+    pointer-events: none;
+    font-weight: 500 !important;
+    transform-origin: bottom left;
+}
+.form-control.floating:focus~label{
+    transform: translate(1px,-85%) scale(0.80);
+    opacity: .8;
+    color: black;
+}
+
+.form-control.floating:valid~label{
+    transform-origin: bottom left;
+    transform: translate(1px,-85%) scale(0.80);
+    opacity: .8;
+}
+/* //END/// */
+
